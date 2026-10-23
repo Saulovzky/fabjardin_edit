@@ -1,0 +1,199 @@
+<!-- Página: Comunidad y formación -->
+
+<!-- Encabezado principal -->
+<section id="formacion-inicio" class="layout-container mt-20 flex w-full flex-col">
+    <div class="flex justify-center">
+        <div class="layout-content-container flex w-full max-w-[1280px] flex-col md:px-10">
+            <div class="@container">
+                <div class="@[480px]:p-4">
+                    <div
+                        class="flex min-h-[120px] flex-col @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-8 py-12 text-center relative overflow-hidden">
+                        <div class="flex flex-col gap-4 max-w-[800px] z-10">
+                            <div
+                                class="mx-auto inline-flex w-fit items-center gap-2 rounded-full border border-[#3c5345] bg-[#1c2620] px-3 py-1">
+                                <span class="material-symbols-outlined text-sm" style="color: #03c9e6;">school</span>
+                                <span class="text-xs font-bold uppercase tracking-wider" style="color: #03c9e6;">
+                                    Comunidad y formación
+                                </span>
+                            </div>
+                            <h1
+                                class="text-5xl font-black leading-[1.1] tracking-[-0.033em] text-white md:text-5xl xl:text-6xl">
+                                <span class="text-gray-custom">
+                                    Aprende haciendo,
+                                </span>
+                                <span
+                                    class="bg-gradient-to-r from-[#038FC7] via-[#08A5D3] to-[#03C7E5] bg-clip-text text-transparent">
+                                    con las máquinas del taller
+                                </span>
+                            </h1>
+                            <p class="text-lg font-light leading-relaxed text-gray-500 md:text-xl">
+                                Talleres prácticos sobre nuevas tecnologías y diseño, para que aprendas usando las
+                                herramientas con las que se fabrican proyectos reales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Talleres y cursos -->
+<section id="talleres-y-cursos" class="layout-container flex w-full flex-col border-y border-[#29382f]">
+    <div class="flex justify-center">
+        <div class="layout-content-container flex w-full max-w-[1280px] flex-col px-4 md:px-10">
+            <div class="w-full px-4 md:px-10 py-10 pb-16">
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col gap-3 mb-4">
+                        <h2
+                            class="text-4xl font-black leading-[1.1] tracking-[-0.033em] text-white md:text-4xl xl:text-5xl">
+                            <span class="text-gray-custom">
+                                Talleres
+                            </span>
+                            <span
+                                class="bg-gradient-to-r from-[#038FC7] via-[#08A5D3] to-[#03C7E5] bg-clip-text text-transparent">
+                                y cursos
+                            </span>
+                        </h2>
+                        <p class="max-w-[800px] text-lg font-light leading-relaxed text-gray-500">
+                            Aprende con las mismas máquinas que usamos para fabricar proyectos reales, acompañado por
+                            nuestro equipo técnico.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        @for (tema of temas; track tema.titulo) {
+                        <div
+                            class="group flex flex-col gap-4 rounded-xl border border-[#3c5345] bg-[#1c2620] p-6 transition-all hover:border-primary/50 hover:bg-[#001D8B]">
+                            <div
+                                class="w-12 h-12 rounded-full bg-background-dark flex items-center justify-center border border-[#3c5345] group-hover:border-primary/50 group-hover:bg-[#01A7A4] text-white transition-colors">
+                                <span class="material-symbols-outlined text-2xl">{{ tema.icono }}</span>
+                            </div>
+                            <h3 class="text-white text-xl font-bold">{{ tema.titulo }}</h3>
+                        </div>
+                        }
+                    </div>
+
+                    <p class="text-[#9db8a8] text-base leading-relaxed">
+                        ¿Quieres saber la fecha del próximo taller?
+                        <a routerLink="/servicios" fragment="contacto" class="naranjaFab font-bold hover:underline">
+                            Escríbenos</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Capacitaciones intensivas -->
+<section id="capacitaciones-intensivas" class="layout-container flex w-full flex-col">
+    <div class="flex justify-center">
+        <div class="layout-content-container flex w-full max-w-[1280px] flex-col px-4 md:px-10">
+            <div class="w-full px-4 md:px-10 py-16">
+                <div class="flex flex-col items-stretch justify-start rounded-xl lg:flex-row lg:items-center shadow-lg bg-surface-dark border border-[#29382f] overflow-hidden"
+                    style="background-color: #1C261F;">
+                    <div class="flex w-full lg:w-1/2 grow flex-col items-start justify-center gap-6 p-8 lg:p-12">
+                        <h2
+                            class="text-4xl font-black leading-[1.1] tracking-[-0.033em] text-white md:text-4xl xl:text-5xl">
+                            <span class="text-gray-custom">
+                                Capacitaciones
+                            </span>
+                            <span
+                                class="bg-gradient-to-r from-[#038FC7] via-[#08A5D3] to-[#03C7E5] bg-clip-text text-transparent">
+                                intensivas
+                            </span>
+                        </h2>
+                        <p class="text-gray-300 text-lg font-normal leading-relaxed">
+                            Programas breves y enfocados en habilidades concretas, pensados para aprender rápido y
+                            salir listo para aplicarlo.
+                        </p>
+                        <a routerLink="/servicios" fragment="contacto"
+                            class="verdeFuerteFab flex h-14 min-w-[160px] items-center justify-center rounded-full px-8 text-base font-bold transition-transform hover:scale-105">
+                            <span class="text-white">Pide información</span>
+                            <span class="text-white material-symbols-outlined ml-2 text-lg">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="flex w-full lg:w-1/2 flex-col items-center justify-center gap-2 p-8 lg:p-12 text-center">
+                        <h3
+                            class="text-6xl md:text-7xl font-black bg-gradient-to-r from-[#038FC7] via-[#08A5D3] to-[#03C7E5] bg-clip-text text-transparent">
+                            +15
+                        </h3>
+                        <p class="text-white text-xl font-bold">bootcamps</p>
+                        <p class="text-gray-400 font-medium">Capacitaciones impartidas en Fabjardin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Escuelas y jóvenes -->
+<section id="escuelas-y-jovenes" class="layout-container flex w-full flex-col border-y border-[#29382f]">
+    <div class="flex justify-center">
+        <div class="layout-content-container flex w-full max-w-[1280px] flex-col px-4 md:px-10">
+            <div class="w-full px-4 md:px-10 py-10 pb-16">
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col gap-3 mb-4">
+                        <h2
+                            class="text-4xl font-black leading-[1.1] tracking-[-0.033em] text-white md:text-4xl xl:text-5xl">
+                            <span class="text-gray-custom">
+                                Escuelas
+                            </span>
+                            <span
+                                class="bg-gradient-to-r from-[#038FC7] via-[#08A5D3] to-[#03C7E5] bg-clip-text text-transparent">
+                                y jóvenes
+                            </span>
+                        </h2>
+                        <p class="max-w-[800px] text-lg font-light leading-relaxed text-gray-500">
+                            Diseñamos experiencias educativas para que niñas, niños y jóvenes comprendan cómo
+                            funcionan las cosas y se animen a crearlas.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        @for (item of escuelas; track item.titulo) {
+                        <div
+                            class="group flex flex-col gap-4 rounded-xl border border-[#3c5345] bg-[#1c2620] p-6 transition-all hover:border-primary/50 hover:bg-[#001D8B]">
+                            <div
+                                class="w-12 h-12 rounded-full bg-background-dark flex items-center justify-center border border-[#3c5345] group-hover:border-primary/50 group-hover:bg-[#01A7A4] text-white transition-colors">
+                                <span class="material-symbols-outlined text-2xl">{{ item.icono }}</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-white text-xl font-bold">{{ item.titulo }}</h3>
+                                <p class="text-[#9db8a8] text-sm leading-relaxed">{{ item.descripcion }}</p>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Llamada a la acción final -->
+<section id="capacita-a-tu-equipo" class="w-full max-w-[960px] mx-auto text-center py-16">
+    <div class="rounded-[2.5rem] md:p-8 flex flex-col items-center relative overflow-hidden">
+        <h2 class="text-4xl font-black leading-[1.1] tracking-[-0.033em] text-white md:text-4xl xl:text-5xl mb-4">
+            <span class="text-gray-custom">
+                Capacita a tu equipo
+            </span>
+            <span class="bg-gradient-to-r from-[#038FC7] via-[#08A5D3] to-[#03C7E5] bg-clip-text text-transparent">
+                o a tu grupo
+            </span>
+        </h2>
+        <p class="text-[#a0b0a8] text-lg max-w-lg z-10 px-4">
+            Cuéntanos qué quieres aprender y diseñamos el programa a partir de ello.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mt-6 z-10 w-full justify-center px-4">
+            <a routerLink="/servicios" fragment="contacto"
+                class="verdeFuerteFab flex h-14 min-w-[160px] items-center justify-center rounded-full px-8 text-base font-bold transition-transform hover:scale-105">
+                <span class="text-white">Solicitar información</span>
+                <span class="text-white material-symbols-outlined ml-2 text-lg">arrow_forward</span>
+            </a>
+        </div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/10 rounded-full blur-[80px]">
+        </div>
+    </div>
+</section>
