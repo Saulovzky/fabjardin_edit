@@ -18,8 +18,7 @@ export class HeaderComponent {
     acerca: false,
     taller:false,
     innovar:false,
-    emprender:false,
-    comunidad:false
+    emprender:false
   };
 
   constructor(private scrollService: Scroll) { }

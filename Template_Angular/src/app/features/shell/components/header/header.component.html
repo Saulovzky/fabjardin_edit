@@ -121,32 +121,13 @@
                         </div>
 
 
-                        <!-- Dropdown Comunidad y formación -->
+                        <!-- Comunidad y formación (enlace directo a la página) -->
                         <div class="relative">
                             <div class="relative">
-                                <button class="text-white" (click)="toggleDropdown('comunidad')">
+                                <a routerLink="/talleres" class="text-white cursor-pointer"
+                                    (click)="closeAllDropdowns()">
                                     Comunidad y formación
-                                </button>
-
-                                <div *ngIf="dropdowns['comunidad']"
-                                    class="absolute  mt-2 text-white  shadow-lg fondoVerdeOscuro w-96">
-                                    <a routerLink="/pagina_en_construccion" class="block px-4 py-2 hover:bg-[#08a5d0] cursor-pointer"
-                                        (click)="scrollToSection('comunidad-1')">
-                                        Quiénes somos
-                                    </a>
-                                    <a routerLink="/pagina_en_construccion" class="block px-4 py-2 hover:bg-[#08a5d0] cursor-pointer"
-                                        (click)="scrollToSection('comunidad-2')">
-                                        Comunidad de usuarios
-                                    </a>
-                                    <a routerLink="/talleres" class="block px-4 py-2 hover:bg-[#08a5d0] cursor-pointer"
-                                        (click)="closeAllDropdowns()">
-                                        Talleres, cursos y eventos
-                                    </a>
-                                    <a routerLink="/pagina_en_construccion" class="block px-4 py-2 hover:bg-[#08a5d0] cursor-pointer"
-                                        (click)="scrollToSection('comunidad-4')">
-                                        Recursos y guía
-                                    </a>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
