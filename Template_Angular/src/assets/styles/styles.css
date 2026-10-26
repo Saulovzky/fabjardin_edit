@@ -90,3 +90,17 @@ section[id] {
   /* color: #01A7A4;  */
   color: #001D8B;
 }
+
+.form-mask {
+  background-color: #1C261F;
+  position: relative;
+
+  -webkit-mask:
+    radial-gradient(circle 40px at top left, transparent 40px, black 41px),
+    radial-gradient(circle 40px at top right, transparent 40px, black 41px),
+    radial-gradient(circle 40px at bottom left, transparent 40px, black 41px),
+    radial-gradient(circle 40px at bottom right, transparent 40px, black 41px);
+
+  -webkit-mask-composite: destination-over;
+  mask-composite: intersect;
+}
